@@ -112,7 +112,7 @@ def detect_bug_and_fix(code_input):
 
 
 ## Architecture Diagram
-   ![Flowchart](https://github.com/Shreyanshy53/Bug_DetectionFixing/blob/main/flowchart.jpg?raw=true) 
+   ![Flowchart](https://github.com/Shreyanshy53/Bug-Detection-and-Fixing/blob/main/flowchart.jpg?raw=true) 
 
    ### Description:
 
