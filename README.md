@@ -136,7 +136,7 @@ def detect_bug_and_fix(code_input):
 6. **Interface / Deployment (Optional)**  
    - A Gradio-based web UI or API endpoint can be used for user interaction and real-time debugging.
 
-### Evaluation Metrics & Test Results
+## Evaluation Metrics & Test Results
 
 To evaluate the performance of the bug detection and fixing system, the following metrics were used:
 
@@ -201,7 +201,18 @@ A simple and user-friendly web interface allows users to:
 
 
 ##  Conclusion
-This project provides a foundation for using deep learning models to detect and automatically fix software bugs without fine-tuning. Future improvements can involve integrating real-time debugging tools and experimenting with multiple models for better performance.
+This project provides a strong foundation for utilizing deep learning models to **detect** and **automatically fix** software bugs using pretrained transformer-based architectures—without requiring additional fine-tuning.
+
+By leveraging models like **CodeBERT** and **DeepSeek-Coder**, the system demonstrates the feasibility of using generative AI to understand and repair buggy Python code. The integration of a data pipeline, AST-based preprocessing, and an interactive interface makes it practical and extensible.
+
+>  **Future Enhancements** may include:
+- Real-time debugging integrations with IDEs.
+- Expanding the solution to multiple programming languages.
+- Fine-tuning models on domain-specific datasets.
+- Improving performance and scalability of the pipeline.
+
+This project sets the groundwork for further research and development in the field of AI-assisted software development and bug fixing.
+
 
 
 
