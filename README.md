@@ -124,18 +124,26 @@ def detect_bug_and_fix(code_input):
 6. **Interface / Deployment (Optional)**  
    - A Gradio-based web UI or API endpoint can be used for user interaction and real-time debugging.
 
-##  Future Plans
-- **Enhancing Accuracy** : Experimenting with additional pretrained models.
+## Future Plans
 
-- **Expanding Language Support** : Extending the model to support multiple programming languages.
+- **Enhancing Accuracy**  
+  Continue experimenting with additional pretrained transformer-based models to improve the precision of bug detection and code correction.
 
-- **Real-time Bug Detection** : Integrating with IDEs for live bug detection and fixes.
+- **Expanding Language Support**  
+  Extend the system to support multiple programming languages beyond Python, increasing its applicability across different codebases.
 
-- **Interactive Debugging UI** : Developing a web-based interface for debugging assistance.
+- **Real-time Bug Detection**  
+  Integrate the bug detection module with IDEs (such as VSCode or PyCharm) to enable live detection and suggestions as developers write code.
 
-- **Model Optimization** : Reducing computational costs for faster performance.
+- **Interactive Debugging UI**  
+  Develop a web-based or desktop interface using tools like Gradio or Streamlit to provide an interactive experience for submitting and fixing buggy code.
 
-- **Advanced Data Pipeline** : Automating preprocessing, feature extraction, and batch processing for scalability.
+- **Model Optimization**  
+  Optimize model inference to reduce computational requirements and make the system faster and more efficient for real-time use.
+
+- **Advanced Data Pipeline**  
+  Automate the entire pipeline—from data collection and preprocessing to model inference and result generation—to support large-scale and scalable deployments.
+
 
 ##  Conclusion
 This project provides a foundation for using deep learning models to detect and automatically fix software bugs without fine-tuning. Future improvements can involve integrating real-time debugging tools and experimenting with multiple models for better performance.
