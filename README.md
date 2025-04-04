@@ -37,9 +37,11 @@ Follow these steps to set up the project locally or in a Colab environment:
 3. **Place the dataset in the correct directory : ** Make sure the following dataset files are located in the directory:
 ```sh /content/drive/MyDrive/BugDetectionProject/ ```
 /content/drive/MyDrive/BugDetectionProject/
-├── codenetpy_train.json
-├── codenetpy_test.json
-└── BugDetectionFixing.ipynb
+
+- `codenetpy_train.json`: Training dataset with buggy and corrected code.
+- `codenetpy_test.json`: Testing dataset for evaluation.
+- `BugDetectionFixing.ipynb`: Main Jupyter notebook to run the pipeline.
+
 
 
 
