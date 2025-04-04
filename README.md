@@ -9,21 +9,22 @@ The goal is to build an end-to-end AI-powered pipeline that:
 - **Automatically fixes the buggy code** using generative models.
 This system aims to assist developers in debugging tasks, enhance code quality, and potentially integrate with IDEs for real-time suggestions.
 
-## Dataset
-The dataset used for training and testing consists of buggy Python code samples with labeled bug information.
+### 📚 Dataset
 
-**Training Dataset**: codenetpy_train.json
+The dataset used for this project comprises Python code samples with known bugs and their corrected versions. It is divided into **training** and **testing** sets for model evaluation.
 
-**Testing Dataset**: codenetpy_test.json
-Each dataset entry includes:
+- **Training Dataset**: `codenetpy_train.json`  
+- **Testing Dataset**: `codenetpy_test.json`
 
-- **original_src** : Buggy Python source code
+Each dataset entry contains the following fields:
 
-- **changed_src** : Corrected Python source code
+- 🔸 `original_src`: Buggy Python source code  
+- 🔸 `changed_src`: Corrected (fixed) version of the buggy code  
+- 🔸 `problem_id`: Unique identifier for each coding problem  
+- 🔸 `error_class`: Type or category of the error detected in the code (e.g., `SyntaxError`, `RuntimeError`)
 
-- **problem_id** : Unique problem identifier
+> 💡 The dataset serves as the foundation for both **bug detection** and **automatic bug fixing**, enabling supervised learning for classification and generative tasks.
 
-- **error_class** : Type of error
 ## Setup and Installation
 1. ### Clone the repository:```sh git clone https://github.com/Shreyanshy53/BugDetectionProject.git cd BugDetectionProject
 
