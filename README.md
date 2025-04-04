@@ -25,12 +25,25 @@ Each dataset entry contains the following fields:
 
 >  The dataset serves as the foundation for both **bug detection** and **automatic bug fixing**, enabling supervised learning for classification and generative tasks.
 
-## Setup and Installation
-1. ### Clone the repository:```sh git clone https://github.com/Shreyanshy53/BugDetectionProject.git cd BugDetectionProject
+### ⚙ Setup and Installation
 
-2. Install dependencies: pip install torch transformers tqdm gradio autopep8
-  
-3. Ensure that the dataset is placed in the appropriate directory -> ``` (/content/drive/MyDrive/BugDetectionProject/) ```
+Follow these steps to set up the project locally or in a Colab environment:
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/Shreyanshy53/BugDetectionProject.git
+   cd BugDetectionProject
+2. **Install required dependencies :** pip install torch transformers tqdm gradio autopep8
+3. **Place the dataset in the correct directory : ** Make sure the following dataset files are located in the directory:
+```sh /content/drive/MyDrive/BugDetectionProject/ ```
+/content/drive/MyDrive/BugDetectionProject/
+├── codenetpy_train.json
+├── codenetpy_test.json
+└── .ipynb
+
+
+
+
 ## Approach
 The project follows these key steps:
 - **Preprocessing:** This step involves cleaning the dataset by removing unnecessary characters, tokenizing the source code into meaningful units, and formatting it to ensure consistency for model input.
