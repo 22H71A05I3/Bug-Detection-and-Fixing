@@ -1,8 +1,14 @@
 # Bug Detection and Fixing Project
 
 
-## Overview 
-This project focuses on detecting and fixing software bugs using deep learning. It leverages pretrained transformer-based models to identify buggy code and suggest corrections.
+##  Overview
+This project focuses on **automated detection and fixing of software bugs**  deep learning models. By leveraging **pretrained transformer-based models** such as **CodeBERT** and **DeepSeek-Coder**, the system can intelligently identify errors in Python source code and suggest appropriate corrections—without requiring any manual intervention.
+The goal is to build an end-to-end AI-powered pipeline that:
+- **Detects bugs** in Python code snippets,
+- **Predicts the cause or type of error**, and
+- **Automatically fixes the buggy code** using generative models.
+This system aims to assist developers in debugging tasks, enhance code quality, and potentially integrate with IDEs for real-time suggestions.
+
 ## Dataset
 The dataset used for training and testing consists of buggy Python code samples with labeled bug information.
 
