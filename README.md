@@ -39,7 +39,7 @@ Follow these steps to set up the project locally or in a Colab environment:
 /content/drive/MyDrive/BugDetectionProject/
 ├── codenetpy_train.json
 ├── codenetpy_test.json
-└── .ipynb
+└── BugDetectionFixing.ipynb
 
 
 
