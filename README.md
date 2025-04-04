@@ -221,7 +221,7 @@ While the system performs well in detecting and fixing bugs using pretrained mod
 ##  Conclusion
 This project provides a strong foundation for utilizing deep learning models to **detect** and **automatically fix** software bugs using pretrained transformer-based architectures—without requiring additional fine-tuning.
 
-By leveraging models like **CodeBERT** and **DeepSeek**, the system demonstrates the feasibility of using generative AI to understand and repair buggy Python code. The integration of a data pipeline, AST-based preprocessing, and an interactive interface makes it practical and extensible.
+By leveraging models like **CodeBERT** and **DeepSeek-Coder**, the system demonstrates the feasibility of using generative AI to understand and repair buggy Python code. The integration of a data pipeline, AST-based preprocessing, and an interactive interface makes it practical and extensible.
 
 >  **Future Enhancements** may include:
 - Real-time debugging integrations with IDEs.
