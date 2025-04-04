@@ -148,7 +148,7 @@ To evaluate the performance of the bug detection and fixing system, we used a co
 - **F1-Score**: The harmonic mean of precision and recall, providing a balanced assessment.
 - **BLEU Score**: Commonly used in code generation tasks, it measures the similarity between the model’s fixed output and the ground truth fixed code.
 
-#### 🔬 Test Summary (Single Evaluation Run)
+####  Test Summary (Single Evaluation Run)
 
 | Metric       | CodeBERT | DeepSeek |
 |--------------|----------|----------|
@@ -202,7 +202,7 @@ A simple and user-friendly web interface allows users to:
 
 - **Advanced Data Pipeline**  
   Automate the entire pipeline—from data collection and preprocessing to model inference and result generation—to support large-scale and scalable deployments.
-### 🚧 Limitations
+###  Limitations
 
 While the system performs well in detecting and fixing bugs using pretrained models, there are some limitations to consider:
 - **Language Specificity**  
