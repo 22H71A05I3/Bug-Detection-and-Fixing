@@ -42,10 +42,6 @@ Follow these steps to set up the project locally or in a Colab environment:
 - `codenetpy_test.json`: Testing dataset for evaluation.
 - `BugDetectionFixing.ipynb`: Main Jupyter notebook to run the pipeline.
 
-
-
-
-
 ## Approach
 The project follows these key steps:
 - **Preprocessing:** This step involves cleaning the dataset by removing unnecessary characters, tokenizing the source code into meaningful units, and formatting it to ensure consistency for model input.
@@ -160,7 +156,27 @@ To evaluate the performance of the bug detection and fixing system, the followin
 | F1-Score   | 89.9%    | 92.5%    |
 | BLEU Score | 84.5     | 88.3     |
 
-> 📌Note: These results are based on the `codenetpy_test.json` dataset containing 43,000 Python samples.
+> Note: These results are based on the `codenetpy_test.json` dataset containing 43,000 Python samples.
+
+###  Integration and Deployment
+
+This section outlines how the model is integrated into a functional system and deployed for usage.
+
+####  Deployment Scripts
+Deployment scripts are provided to automate the following:
+
+- **Model Loading**: Automatically loads the pretrained models (`CodeBERT` and `DeepSeek-Coder`) with appropriate configurations.
+- **Prediction Pipeline**: Handles input processing, bug detection, and automatic bug fixing.
+- **Interface Setup**: Uses **Gradio** to launch an interactive web UI for end-users to test buggy code and receive predictions and fixes.
+- **Environment Setup**: Installs necessary dependencies, sets up device configurations (CPU/GPU), and loads required files.
+
+#### Gradio Web UI
+A simple and user-friendly web interface allows users to:
+
+- Input Python code snippets.
+- View detected errors or bug reports.
+- Receive auto-corrected code suggestions.
+
 
 
 ## Future Plans
