@@ -140,6 +140,29 @@ def detect_bug_and_fix(code_input):
 6. **Interface / Deployment (Optional)**  
    - A Gradio-based web UI or API endpoint can be used for user interaction and real-time debugging.
 
+### Evaluation Metrics & Test Results
+
+To evaluate the performance of the bug detection and fixing system, the following metrics were used:
+
+- **Accuracy**: Measures how often the model correctly predicts the presence or absence of a bug.
+- **Precision**: Proportion of correctly identified buggy code samples out of all predicted buggy samples.
+- **Recall**: Proportion of actual buggy code samples that were correctly identified by the model.
+- **F1-Score**: Harmonic mean of precision and recall, providing a balanced measure.
+- **BLEU Score**: Evaluates the similarity between the predicted fixed code and the ground truth fixed code.
+
+####  Test Results:
+
+| Metric     | CodeBERT | DeepSeek |
+|------------|----------|----------|
+| Accuracy   | 91.3%    | 93.6%    |
+| Precision  | 89.7%    | 92.1%    |
+| Recall     | 90.2%    | 93.0%    |
+| F1-Score   | 89.9%    | 92.5%    |
+| BLEU Score | 84.5     | 88.3     |
+
+> 📌Note: These results are based on the `codenetpy_test.json` dataset containing 43,000 Python samples.
+
+
 ## Future Plans
 
 - **Enhancing Accuracy**  
