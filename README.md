@@ -198,6 +198,20 @@ A simple and user-friendly web interface allows users to:
 
 - **Advanced Data Pipeline**  
   Automate the entire pipeline—from data collection and preprocessing to model inference and result generation—to support large-scale and scalable deployments.
+### 🚧 Limitations
+
+While the system performs well in detecting and fixing bugs using pretrained models, there are some limitations to consider:
+- **Language Specificity**  
+  Currently, the pipeline only supports **Python** code. It does not work with other programming languages like Java, C++, etc.
+
+- **No Fine-tuning**  
+  Pretrained models are used as-is (inference mode). Without fine-tuning, the model might not capture project-specific coding styles or edge cases.
+  
+- **Error Granularity**  
+  The model detects the presence of a bug but may not always provide **specific line numbers** or granular location of the error..
+
+- **Evaluation Bias**  
+  Evaluation metrics are based on a specific dataset (CodeNet). Real-world performance might vary on different datasets or environments.
 
 
 ##  Conclusion
