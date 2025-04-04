@@ -101,6 +101,29 @@ def detect_bug_and_fix(code_input):
 
 ## Architecture Diagram
    ![Flowchart](https://github.com/Shreyanshy53/Bug_DetectionFixing/blob/main/flowchart.jpg?raw=true) 
+
+   ### Description:
+
+1. **Input (Buggy Code)**  
+   - Raw source code samples are provided as input to the system.
+
+2. **Preprocessing Pipeline**  
+   - The code is cleaned, normalized, and tokenized.
+   - Abstract Syntax Tree (AST) analysis extracts structural features.
+   - Data is batched and prepared for model input.
+
+3. **Bug Detection Module**  
+   - A pretrained model (e.g., CodeBERT or DeepSeek-Coder) analyzes the input and identifies potential bugs or errors.
+
+4. **Bug Fixing Module**  
+   - If bugs are detected, the system generates corrected code using `DeepSeek-Coder-1.3B-Instruct`.
+
+5. **Output (Fixed Code + Error Message)**  
+   - The final output includes a description of the detected error and the corrected version of the code.
+
+6. **Interface / Deployment (Optional)**  
+   - A Gradio-based web UI or API endpoint can be used for user interaction and real-time debugging.
+
 ##  Future Plans
 - **Enhancing Accuracy** : Experimenting with additional pretrained models.
 
