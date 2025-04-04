@@ -64,8 +64,24 @@ A structured data pipeline was implemented to streamline preprocessing and featu
 - **AST Analysis**: Extracting syntax structure of code.
 - **Batch Processing**: Handling large datasets in batches for memory efficiency.
 - **Dataset Preparation**: Converting processed data into PyTorch datasets.
-## Bug Detection and Fixing using Pretrained Models
-The project uses **CodeBERT** and **DeepSeek** for bug detection and **DeepSeek-AI/DeepSeek-Coder-1.3B-Instruct** for bug fixing without fine-tuning.
+### Bug Detection and Fixing using Pretrained Models
+
+This project utilizes powerful pretrained models to perform both **bug detection** and **automatic bug fixing** in Python code **without requiring fine-tuning**.
+- **Bug Detection** is performed using:
+  - [`CodeBERT`](https://huggingface.co/microsoft/codebert-base)
+  - [`DeepSeek`](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct)
+- **Bug Fixing** is performed using:
+  - [`DeepSeek-AI/DeepSeek-Coder-1.3B-Instruct`](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct)
+These models help in:
+- Identifying error patterns in the buggy code
+- Predicting and generating corrected code automatically
+The pipeline allows developers to input buggy Python code and receive both:
+1. The **error message prediction**
+2. The **fixed version** of the code
+
+>  These models are used in inference mode, meaning no additional training is required — making it fast, efficient, and ready-to-deploy.
+
+
 ```sh from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
