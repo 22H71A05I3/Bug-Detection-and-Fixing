@@ -136,27 +136,31 @@ def detect_bug_and_fix(code_input):
 6. **Interface / Deployment (Optional)**  
    - A Gradio-based web UI or API endpoint can be used for user interaction and real-time debugging.
 
-## Evaluation Metrics & Test Results
+###  Evaluation Metrics & Test Results
 
-To evaluate the performance of the bug detection and fixing system, the following metrics were used:
+To evaluate the performance of the bug detection and fixing system, we used a combination of classification and generation metrics. The evaluation was conducted using the `codenetpy_test.json` dataset, which contains **43,000 Python code samples** with labeled bugs and their corrected versions.
 
-- **Accuracy**: Measures how often the model correctly predicts the presence or absence of a bug.
-- **Precision**: Proportion of correctly identified buggy code samples out of all predicted buggy samples.
-- **Recall**: Proportion of actual buggy code samples that were correctly identified by the model.
-- **F1-Score**: Harmonic mean of precision and recall, providing a balanced measure.
-- **BLEU Score**: Evaluates the similarity between the predicted fixed code and the ground truth fixed code.
+#### Metrics Used:
 
-####  Test Results:
+- **Accuracy**: Measures the proportion of correctly predicted buggy and non-buggy code samples.
+- **Precision**: Indicates how many of the predicted buggy samples were actually buggy.
+- **Recall**: Reflects how many actual buggy samples were correctly identified by the model.
+- **F1-Score**: The harmonic mean of precision and recall, providing a balanced assessment.
+- **BLEU Score**: Commonly used in code generation tasks, it measures the similarity between the model’s fixed output and the ground truth fixed code.
 
-| Metric     | CodeBERT | DeepSeek |
-|------------|----------|----------|
-| Accuracy   | 91.3%    | 93.6%    |
-| Precision  | 89.7%    | 92.1%    |
-| Recall     | 90.2%    | 93.0%    |
-| F1-Score   | 89.9%    | 92.5%    |
-| BLEU Score | 84.5     | 88.3     |
+#### 🔬 Test Summary (Single Evaluation Run)
 
-> Note: These results are based on the `codenetpy_test.json` dataset containing 43,000 Python samples.
+| Metric       | CodeBERT | DeepSeek |
+|--------------|----------|----------|
+| Accuracy     | 91.3%    | 93.6%    |
+| Precision    | 89.7%    | 92.1%    |
+| Recall       | 90.2%    | 93.0%    |
+| F1-Score     | 89.9%    | 92.5%    |
+| BLEU Score   | 84.5     | 88.3     |
+
+>  *Note*: These results are based on one evaluation pass over the test dataset. Minor fluctuations may occur across multiple runs. No fine-tuning was performed — models were used in inference mode only.
+> Results are derived from the codenetpy_test.json file, containing 43,000 labeled Python code samples.
+
 
 ###  Integration and Deployment
 
